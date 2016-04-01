@@ -8,3 +8,4 @@ rvrs(L, R) :-
 rvrs([], R, R).
 rvrs([X|L1], L2, R) :-
     rvrs(L1, [X|L2], R).
+

@@ -8,3 +8,4 @@ kth1([_|L], K, X) :-
     K > 1,
     NK is K - 1,
     kth1(L, NK, X).
+
