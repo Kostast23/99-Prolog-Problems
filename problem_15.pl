@@ -7,8 +7,8 @@ duplicate_n(L1, T, L2) :-
     duplicate_n(L1, T, T, L2).
 
 % duplicate_n(?L1, +N, +T, ?L2).
-% The list L2 is obtained by L1 by duplicating the first element T times and
-% all the following elements N times.
+% The list L2 is obtained from the list L1 by duplicating the first element T
+% times and all the following elements N times.
 duplicate_n([], _, _, []).
 duplicate_n([_|Xs], T, 0, Ds) :-
     duplicate_n(Xs, T, T, Ds).
